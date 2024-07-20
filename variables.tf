@@ -20,7 +20,7 @@ variable "public_subnet_cidr" {
 
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
-  default     = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI ID
+  default     = "ami-01fccab91b456acc2"  # Amazon Linux 2 AMI ID 
 }
 
 variable "instance_type" {
