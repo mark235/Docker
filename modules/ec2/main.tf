@@ -33,11 +33,11 @@ resource "aws_instance" "this" {
 
   user_data = <<-EOF
               #!/bin/bash
-              yum update -y
-              amazon-linux-extras install docker -y
-              service docker start
-              usermod -a -G docker ec2-user
-              docker run -d -p 80:80 --name nginx nginx
+              sudo yum update -y
+              sudo amazon-linux-extras install docker -y
+              sudo service docker start
+              sudo usermod -a -G docker ec2-user
+              sudo docker run -d -p 80:80 --name nginx nginx
               echo '<html><body><h1>How to Perform a Card Trick</h1><p>Details on the card trick go here.</p></body></html>' > /usr/share/nginx/html/index.html
               EOF
 }
