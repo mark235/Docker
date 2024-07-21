@@ -30,5 +30,5 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Key pair name"
-  default     = "CardTrick"
+  default     = "terraform"
 }
